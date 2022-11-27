@@ -1,0 +1,19 @@
+/* ======================= screen 876 */
+@media (max-width: 876px) {
+  .cart-container {
+    min-width: 100%;
+    padding-left: 17px;
+  }
+}
+/* ======================= screen 768 */
+@media (max-width: 768px) {
+  .header-padding {
+    padding: 15px;
+  }
+}
+/* ====================== screen 1366 */
+/* @media (max-width: 1366px) {
+  .header-padding {
+    padding: 25px calc(3vw + 9px);
+  }
+} */

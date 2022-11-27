@@ -1,0 +1,587 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@500;700&family=Lato:wght@900&family=Libre+Baskerville:wght@700&family=Qwitcher+Grypen:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@500;700&family=Lato:wght@900&family=Libre+Baskerville:wght@700&family=Montserrat:wght@200;400;500;600;700&family=Qwitcher+Grypen:wght@700&display=swap");
+/* @font-face {
+  font-family: "Montserrat";
+  src: url(./font/static/Montserrat-Regular.ttf);
+  font-stretch: normal;
+} */
+/* font-family: 'Antonio', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Qwitcher Grypen', cursive; */
+
+:root {
+  --swiper-theme-color: #007aff;
+}
+:root {
+  --logo-color-1000: #30363d;
+  --logo-color-900: #454b54;
+  --logo-color-400: #a3b1c7;
+  --logo-color-100: #454b5411;
+  --bg: #f7f9f9;
+  --fz-s: 12px;
+  --fz-sm: 14px;
+  --fz-m: 16px;
+  --fz-ml: 18px;
+  --fz-l: 22px;
+  --fz-xl: 24px;
+  --shade: 0 1px 5px rgba(0, 0, 0, 0.2);
+  --nav-height: 68px;
+}
+:root {
+  --bg-color: #f2f4f5;
+  --border-color: #e5e7eb;
+  --tc-search: #00205b;
+  --bg-color-span: #70c8b5;
+  --tc-create-account: rgb(60, 59, 77);
+  --tc-link-hover: rgb(29, 78, 216, 1);
+}
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::after,
+*::before {
+  content: "";
+  position: absolute;
+}
+html {
+  tab-size: 4;
+  font-family: Montserrat, sans-serif;
+  width: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.2;
+}
+header {
+  width: 100%;
+  position: fixed;
+}
+input {
+  border: none;
+}
+ul {
+  text-decoration: none;
+  list-style: none;
+}
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+audio,
+canvas,
+embed,
+iframe,
+img,
+object,
+svg,
+video {
+  display: block;
+}
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+  outline: none;
+  color: black;
+}
+button {
+  border: none;
+}
+
+/* ================================ header  */
+.header {
+  background-color: white;
+  z-index: 2;
+}
+.header::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  bottom: 0;
+  left: 0px;
+}
+.header-padding {
+  padding: 25px calc(3vw + 9px);
+}
+.header .search-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+}
+/* ================================ header-> logo image */
+.header .search-bar .logo-img {
+  width: 12.56%;
+  min-width: 100px;
+}
+.header .search-bar .logo-img a img {
+  width: 100%;
+  max-width: 100%;
+}
+/* ================================ header-> search input */
+
+.header .search-bar .search-input form {
+  width: 100%;
+  height: 100%;
+}
+.header .search-bar .search-input {
+  width: 39.5%;
+  background-color: var(--bg-color);
+  border-radius: 48px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-left: 0.8rem;
+  margin-right: 2rem;
+  justify-content: left;
+}
+
+.header .search-input form .div-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1.9rem;
+}
+.header .search-input form .div-form {
+  cursor: pointer;
+}
+.header .search-input form .div-form .search-icon {
+  width: 24px;
+  height: 21px;
+}
+.header .search-input form .div-form .search-icon img {
+  width: 100%;
+  height: 100%;
+}
+.header .search-bar form .div-form input {
+  width: 100%;
+  height: 54px;
+  background-color: inherit;
+  margin-left: 1.37rem;
+  color: #00205b;
+  font-size: 17px;
+  font-family: "Montserrat";
+}
+.header .search-bar form .div-form input:focus {
+  border: none !important;
+  outline: none;
+}
+.header .search-bar form .div-form input::placeholder {
+  color: #70c8b5;
+  font-size: 17px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  opacity: 1;
+}
+.button {
+  border: none;
+  background-color: inherit;
+}
+
+/* ================================ header-> basket  */
+.header .search-bar .basket {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 28px;
+}
+.header .search-bar .myAccount-box {
+  min-height: 100%;
+  display: flex;
+  align-items: end;
+  position: relative;
+}
+.header .search-bar .basket .myAccount {
+  min-height: 100%;
+  margin-right: 1px;
+  margin-top: 3px;
+  padding: 0 10px;
+  height: 36px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.header .search-bar .basket .myAccount .myAccountSpan {
+  display: inline-block;
+  height: 24px;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #00205b;
+  margin-right: -0.125rem;
+}
+.header .search-bar .basket .myAccount-box:hover .myAccountSpan {
+  color: var(--bg-color-span);
+  border-bottom: 1px solid var(--bg-color-span);
+}
+
+.header .search-bar .basket .myAccount-box .myAccount .myAccountSpan::before {
+  content: "";
+  position: absolute;
+}
+.header .search-bar .basket .myAccount-box .myAccount .drapdown-icon {
+  width: 12px;
+  height: 12px;
+  margin-left: 5px;
+  transition: 0.3s;
+}
+/* چرخش فلش کنار my account */
+.header .search-bar .basket .myAccount-box:hover .drapdown-icon {
+  transform: rotate(-180deg);
+}
+
+/* ================================================   در قسمت کارت کانتینر هم استفاده شده =================*/
+.button-img {
+  width: 28px;
+  width: 28px;
+  height: 28px;
+  color: #00205b;
+  cursor: pointer;
+}
+.countOfBasketObjs {
+  min-width: 20px;
+  background-color: var(--bg-color-span);
+  position: relative;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+}
+/* ================================================   در قسمت کارت کانتینر هم استفاده شده =================*/
+.header .search-bar .basket .button-img {
+  margin-left: 0.7rem;
+}
+.header .search-bar .basket .button img {
+  width: inherit;
+  height: inherit;
+}
+.header .search-bar .basket .button-img .countOfBasketObjs {
+  top: -43px;
+  right: -14px;
+  padding: 2px 6px;
+}
+.header .search-bar .basket .heart {
+  background-color: white;
+  display: none;
+}
+.header .search-bar .basket .heart img {
+  margin-right: 8px;
+  margin-top: 5px;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+}
+/* ================================ header search-bar hamber icon */
+.block {
+  display: none;
+}
+.header .search-bar .hambergeri {
+  display: flex;
+}
+.header .search-bar .hambergerIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 28px;
+  cursor: pointer;
+}
+.header .search-bar .hambergerIconSpan .hambergerIcon .hamber-line {
+  width: 100%;
+  height: 3px;
+  background-color: #00205b;
+}
+/* ================================ header-> myAccont menu */
+.basket .myAccount-box .myAccontMenu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-height: 100%;
+  min-width: 100%;
+  padding-top: 42px;
+  max-width: 100%;
+  z-index: 2;
+  cursor: pointer;
+}
+.basket .myAccount-box .myAccontMenu .h-menu {
+  position: absolute;
+  left: -1.5rem;
+  width: 180px;
+  min-height: 240px;
+  border: 1px solid black;
+  background-color: white;
+  cursor: pointer;
+  opacity: 0;
+  display: none;
+  animation: showHMenu 0.3s forwards;
+}
+/* انیمیشن باز شدن منو مای اکانت  */
+@keyframes showHMenu {
+  0% {
+    opacity: 0;
+    transform: translateY(-16px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.basket .myAccount-box .myAccontMenu .h-menu .menu-top {
+  border-bottom: 1px solid black;
+}
+.basket .myAccount-box .myAccontMenu .h-menu .menu-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 24px 10px;
+}
+.basket .myAccount-box .myAccontMenu .h-menu .signIn {
+  display: block;
+  min-height: 32px;
+  background-color: var(--bg-color-span);
+  color: white;
+  padding: 4px 35px;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.basket .myAccount-box .myAccontMenu .h-menu .signIn:hover {
+  background-color: #217c68;
+}
+.myAccontMenu .h-menu .menu-top #creartAccount {
+  min-height: 21px;
+  min-width: 131px;
+  color: var(--tc-create-account);
+  font-size: 14px;
+  flex-shrink: 0;
+  white-space: nowrap;
+  margin-top: 5px;
+  transition: 0.3s;
+}
+.myAccontMenu .h-menu .menu-top #creartAccount:hover {
+  color: #70c8b5;
+}
+.myAccontMenu .h-menu .menu-nav {
+  text-align: start;
+  line-height: 1.7;
+}
+.myAccontMenu .h-menu .menu-nav ul li {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.myAccontMenu .h-menu .menu-nav ul li:hover {
+  background-color: var(--bg-color);
+}
+.myAccontMenu .h-menu .menu-nav ul li a {
+  transition: 0.3s;
+}
+.myAccontMenu .h-menu .menu-nav ul li a:hover {
+  color: var(--bg-color-span);
+}
+
+/* ================================ header-> navbar */
+.navbar {
+  width: 100%;
+  height: 44px;
+  padding-top: 1.25rem;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: inherit;
+}
+.navbar nav {
+  height: 24px;
+}
+.navbar nav .ul-menu-nav {
+  height: 24px;
+  display: flex;
+  position: relative;
+  vertical-align: baseline;
+}
+.navbar nav .ul-menu-nav .ul-menu-nav-item {
+  display: inline;
+  list-style-type: none;
+  text-align: center;
+  height: 100%;
+  cursor: pointer;
+}
+.navbar .ul-menu-nav .ul-menu-nav-item .ul-menu-nav-link {
+  color: #00205b;
+  font-weight: 400;
+  text-shadow: none;
+  height: inherit;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.navbar .ul-menu-nav .ul-menu-nav-item:hover .ul-menu-nav-link {
+  color: var(--bg-color-span);
+  text-decoration: underline;
+}
+.navbar nav .ul-menu-nav .ul-menu-nav-item .books {
+  padding-left: 0;
+  margin-left: 0;
+  padding-right: calc(2vw - 3px);
+}
+.navbar nav .ul-menu-nav .ul-menu-nav-item .books::after {
+  content: "|";
+  position: absolute;
+  color: #00205b;
+  font-weight: 400;
+  right: 0;
+  top: 0;
+}
+.navbar .ul-menu-nav .ul-menu-nav-item .gift-cards,
+.navbar .ul-menu-nav .ul-menu-nav-item .toys {
+  padding: 0 calc(2vw - 3px);
+}
+.navbar nav .ul-menu-nav .ul-menu-nav-item .gift-cards::after {
+  content: "|";
+  position: absolute;
+  color: #00205b;
+  font-weight: 400;
+  right: 0;
+  top: 0%;
+}
+
+.navbar .ul-menu-nav .ul-menu-nav-item .gifts {
+  padding-left: calc(2vw - 3px);
+}
+.navbar nav .ul-menu-nav .ul-menu-nav-item .toys::after {
+  content: "|";
+  position: absolute;
+  color: #00205b;
+  font-weight: 400;
+  right: 0;
+  top: 0%;
+}
+/* ======================================= navbar Books */
+.navbar nav .has-menu-child:hover .book-menu {
+  display: block;
+}
+.navbar nav .book-menu {
+  position: absolute;
+  width: 100%;
+  top: 20px;
+  left: 0;
+  padding: 22px 0 0 0;
+  z-index: 2;
+  display: none;
+}
+.navbar nav .book-menu-item {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  padding: 16px 35px 35px;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+  overflow-y: scroll;
+}
+.navbar .book-menu-col {
+  display: flex;
+  width: 20%;
+  flex-direction: column;
+  min-width: 260px;
+  margin: 15px 30px 0 0;
+}
+.navbar .book-menu-col-child {
+  line-height: 1.8;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+}
+.navbar .book-menu-col-child .book-menu-title-a h3 {
+  margin-bottom: 10px;
+  color: var(--bg-color-span);
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.navbar .book-menu-col-child .book-menu-title-a:hover h3 {
+  text-decoration: underline;
+  opacity: 0.75;
+}
+.navbar .book-menu-col-child .book-menu-ul .book-menu-ul-li {
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 300;
+}
+.navbar
+  nav
+  .ul-menu-nav
+  .has-menu-child
+  .book-menu-col-child
+  .book-menu-ul
+  .book-menu-ul-li
+  .book-menu-ul-a {
+  color: var(--tc-search);
+  transition: 0.3s;
+  font-weight: 400;
+}
+.navbar
+  nav
+  .has-menu-child
+  .book-menu-col-child
+  .book-menu-ul
+  .book-menu-ul-li:hover
+  .book-menu-ul-a {
+  color: var(--logo-color-400);
+  text-decoration: underline;
+}
+/* responsive */
+@media (max-width: 1024px) {
+  .header-padding {
+    padding: 15px 30px;
+  }
+  .navbar,
+  .header .search-bar .myAccount-box {
+    display: none;
+  }
+  .header .search-bar .basket .heart {
+    display: block;
+  }
+  .header .search-bar .search-input {
+    width: 100%;
+    order: 4;
+    margin: 15px 0 0 0;
+  }
+  .hambergeri {
+    order: 1;
+  }
+  .header .search-bar .block {
+    display: block;
+  }
+  .header .search-bar .logo-img {
+    order: 2;
+  }
+  .header .search-bar .basket {
+    order: 3;
+  }
+}

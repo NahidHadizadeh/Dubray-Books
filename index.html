@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link css header -->
+    <link rel="stylesheet" href="./css/style-header.css" />
+    <!-- link css sidebar and cart menu -->
+    <link rel="stylesheet" href="./css/style-sidebar-and-cart-menu.css" />
+    <!-- link css media Query -->
+    <link rel="stylesheet" href="./css/style-media.css" />
+    <!-- link css main -->
+    <link rel="stylesheet" href="./css/main.style.css" />
+    <!-- link fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@500;700&family=Lato:wght@900&family=Libre+Baskerville:wght@700&family=Montserrat:wght@100;200,300,400;600;700&family=Qwitcher+Grypen:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+
+    <title>Dubraybooks</title>
+  </head>
+  <body>
+    <!-- <div class="next">
+      <div>
+        <div class="cart-container">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="blur blur+"></div>
+      </div>
+    </div> -->
+    <header id="header">
+      <div class="header header-padding">
+        <div class="search-bar">
+          <div class="logo-img">
+            <a href="#">
+              <img src="./images/header/dark-logo.png" alt="Dubary Logo" />
+              <!-- <img
+                src="https://dubraybooks.ie/assets/img/dark-logo.png"
+                alt="Dubary Logo"
+              /> -->
+            </a>
+          </div>
+          <div class="search-input">
+            <form action="">
+              <div class="div-form">
+                <div class="search-icon">
+                  <img src="./images/header/search.png" alt="search icon" />
+                  <!-- <img
+                    src="https://dubraybooks.ie/assets/img/icons/search.png"  
+                    alt="search icon"
+                  /> -->
+                </div>
+                <input
+                  id="input-search"
+                  type="search"
+                  placeholder="Title, author, keyword..."
+                />
+              </div>
+            </form>
+          </div>
+          <div class="basket">
+            <div class="myAccount-box">
+              <button class="button myAccount">
+                <span id="myAccount" class="myAccountSpan">My Account</span>
+                <img
+                  class="drapdown-icon"
+                  src="./images/header/arrow.svg"
+                  alt="drapdown icon"
+                />
+                <!-- <img
+                  class="drapdown-icon"
+                  src="https://dubraybooks.ie/assets/img/icons/arrow.svg"
+                  alt="drapdown icon"
+                /> -->
+              </button>
+              <div class="myAccontMenu">
+                <div class="h-menu">
+                  <div class="menu-top">
+                    <!-- <button class="signIn">
+                  Sign In
+                </button> -->
+                    <button
+                      class="signIn"
+                      type="button"
+                      aria-haspopup="dialog"
+                      aria-expanded="false"
+                      aria-controls="radix-0"
+                      data-state="closed"
+                    >
+                      Sign In
+                    </button>
+                    <a href="#" id="creartAccount">Create An Account</a>
+                  </div>
+                  <nav class="menu-nav">
+                    <ul>
+                      <li><a href="#">Manage Account</a></li>
+                      <li><a href="#">Order Status</a></li>
+                      <li><a href="#">Address Book</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <button class="heart">
+              <img
+                src="./images/header/heart-icon-transparent-background-11.png"
+                alt="heart"
+              />
+            </button>
+            <button class="button-img button">
+              <img src="./images/header/cart.png" alt="cart shop icon" />
+              <span class="countOfBasketObjs">0</span>
+            </button>
+            <div class="layout-cart">
+              <div class="cart-container">
+                <div class="contact d-flex-col">
+                  <div class="shoping-cart d-flex padding15-35">
+                    <div class="shop-box d-flex">
+                      <p>Shopping Cart</p>
+                      <button class="button-img button">
+                        <img
+                          src="./images/header/cart.png"
+                          alt="cart shop icon"
+                        />
+                        <span class="countOfBasketObjs">0</span>
+                      </button>
+                    </div>
+                    <span class="close">X</span>
+                  </div>
+                  <div class="shoppings"></div>
+                  <div class="order-total d-flex">
+                    <p>ORDER TOTAL</p>
+                    <strong class="price">0.00 EUR</strong>
+                  </div>
+                  <div class="checkout-box d-flex padding15-35">
+                    <button class="button">Checkout</button>
+                  </div>
+                  <!-- <div class="shopping-footer"></div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block">
+            <!--============================== hamberger icon -->
+            <div class="hambergeri">
+              <span class="hambergerIconSpan">
+                <div class="hambergerIcon">
+                  <div class="top-hamber hamber-line"></div>
+                  <div class="midle-hamber hamber-line"></div>
+                  <div class="bottom-hamber hamber-line"></div>
+                </div>
+              </span>
+            </div>
+            <!--============================== end hamberger icon -->
+            <!-- ============================== side bar -->
+            <div class="side-bar">
+              <div class="header-side-bar">
+                <a href="#" class="header-logo">
+                  <img src="./images/header/dark-logo (1).png" alt="logo" />
+                </a>
+                <!-- <div class="close-side-bar">
+                  <div class="close-icon close-1"></div>
+                  <div class="close-icon close-2"></div>
+                </div> -->
+                <a href="#" class="a-close">×</a>
+                <!-- <a class="text-5xl cursor-pointer">×</a> -->
+              </div>
+              <!-- ============================== container side bar -->
+              <div class="container-side-bar">
+                <div>
+                  <div class="account-side-bar">
+                    <div class="account-box">
+                      <i class="bi bi-person-fill"></i>
+                      <span>Account</span>
+                    </div>
+                    <button
+                      id="side-bar-account-drapdown-icon"
+                      class="drapdown-icon-side"
+                    >
+                      <img src="./images/header/arrow.svg" alt="drapdown" />
+                    </button>
+                  </div>
+                  <div class="side-account-menu">
+                    <a href="#">Login/Create Account</a>
+                    <a href="#">Order Status</a>
+                    <a href="#">Address Book</a>
+                  </div>
+                </div>
+                <div class="side-books-list d-flex-col">
+                  <p id="books">Books</p>
+                  <div class="side-menu-box d-flex-col">
+                    <div class="side-menu-item">
+                      <div class="side-menu-item-header d-flex cursor-pointer">
+                        <span>Fiction</span>
+                        <button class="drapdown-icon-side">
+                          <img src="./images/header/arrow.svg" alt="drapdown" />
+                        </button>
+                      </div>
+                      <div class="ul-box-menu">
+                        <ul class="side-menu-item-container Fiction">
+                          <!-- <li class="side-menu-options">
+                            <a href="#">Anthologies & Short Stories</a>
+                          </li> -->
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="side-menu-item">
+                      <div class="side-menu-item-header d-flex cursor-pointer">
+                        <span>Non-fiction</span>
+                        <button class="drapdown-icon-side">
+                          <img src="./images/header/arrow.svg" alt="drapdown" />
+                        </button>
+                      </div>
+                      <div class="ul-box-menu">
+                        <ul class="side-menu-item-container Non-fiction">
+                          <!-- <li class="side-menu-options">
+                            <a href="#">Anthologies & Short Stories</a>
+                          </li> -->
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="side-menu-item">
+                      <div class="side-menu-item-header d-flex cursor-pointer">
+                        <span>Children's</span>
+                        <button class="drapdown-icon-side">
+                          <img src="./images/header/arrow.svg" alt="drapdown" />
+                        </button>
+                      </div>
+                      <div class="ul-box-menu">
+                        <ul class="side-menu-item-container Childrens">
+                          <!-- <li class="side-menu-options">
+                            <a href="#">Anthologies & Short Stories</a>
+                          </li> -->
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="side-menu-item">
+                      <div class="side-menu-item-header d-flex cursor-pointer">
+                        <span>Irish Books</span>
+                        <button class="drapdown-icon-side">
+                          <img src="./images/header/arrow.svg" alt="drapdown" />
+                        </button>
+                      </div>
+                      <div class="ul-box-menu">
+                        <ul class="side-menu-item-container Irish">
+                          <!-- <li class="side-menu-options">
+                            <a href="#">Anthologies & Short Stories</a>
+                          </li> -->
+                        </ul>
+                      </div>
+                    </div>
+                    <a href="#" class="cursor-pointer">Gift Cards</a>
+                    <a href="#" class="cursor-pointer">Toys & Games</a>
+                    <a href="#" class="cursor-pointer">Gifts</a>
+                    <!-- <div class="side-menu-item-container"></div>
+                    <div class="side-menu-item-container"></div>
+                    <div class="side-menu-item-container"></div> -->
+                  </div>
+                </div>
+              </div>
+              <!-- ============================== end container side bar -->
+            </div>
+            <!-- ================================== end side bar -->
+          </div>
+        </div>
+        <!-- ==================== navbar -->
+        <div class="navbar">
+          <nav>
+            <ul class="ul-menu-nav">
+              <li class="ul-menu-nav-item has-menu-child">
+                <a href="#" class="books ul-menu-nav-link">Books</a>
+                <div class="book-menu">
+                  <div class="book-menu-item">
+                    <div class="book-menu-col">
+                      <div class="book-menu-col-child">
+                        <a href="#" class="book-menu-title-a"
+                          ><h3>Fiction</h3></a
+                        >
+                        <ul id="Fiction" class="book-menu-ul">
+                          <li class="book-menu-ul-li">
+                            <a href="#" class="book-menu-ul-a"
+                              >Anthologies & Short Stories</a
+                            >
+                          </li>
+                          <li class="book-menu-ul-li">
+                            <a href="#" class="book-menu-ul-a">Classics</a>
+                          </li>
+                          <li class="book-menu-ul-li">
+                            <a href="#" class="book-menu-ul-a">Crime Fiction</a>
+                          </li>
+                          <li class="book-menu-ul-li">
+                            <a href="#" class="book-menu-ul-a"
+                              >Historical Fiction</a
+                            >
+                          </li>
+                          <li class="book-menu-ul-li">
+                            <a href="#" class="book-menu-ul-a"
+                              >Contemporary Fiction</a
+                            >
+                          </li>
+                          <li class="book-menu-ul-li">
+                            <a href="#" class="book-menu-ul-a">Poetry</a>
+                          </li>
+                          <li class="book-menu-ul-li">
+                            <a href="#" class="book-menu-ul-a">Romance</a>
+                          </li>
+                          <li class="book-menu-ul-li">
+                            <a href="#" class="book-menu-ul-a">Fantesy</a>
+                          </li>
+                          <li class="book-menu-ul-li">
+                            <a href="#" class="book-menu-ul-a"
+                              >Science Fiction</a
+                            >
+                          </li>
+                          <li class="book-menu-ul-li">
+                            <a href="#" class="book-menu-ul-a">Horrer</a>
+                          </li>
+                          <li class="book-menu-ul-li">
+                            <a href="#" class="book-menu-ul-a"
+                              >Mythc & Legends</a
+                            >
+                          </li>
+                          <li class="book-menu-ul-li">
+                            <a href="#" class="book-menu-ul-a">Grafic Novels</a>
+                          </li>
+                          <li class="book-menu-ul-li">
+                            <a href="#" class="book-menu-ul-a">Manga</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="book-menu-col">
+                      <div class="book-menu-col-child">
+                        <a href="#" class="book-menu-title-a"
+                          ><h3>Non-fiction</h3></a
+                        >
+                        <ul id="Non-fiction" class="book-menu-ul">
+                          <li class="book-menu-ul-li">
+                            <a href="#" class="book-menu-ul-a"></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="book-menu-col">
+                      <div class="book-menu-col-child">
+                        <a href="#" class="book-menu-title-a"
+                          ><h3>Children's</h3></a
+                        >
+                        <ul id="Childrens" class="book-menu-ul">
+                          <li class="book-menu-ul-li">
+                            <a href="#" class="book-menu-ul-a"></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="book-menu-col">
+                      <div class="book-menu-col-child">
+                        <a href="#" class="book-menu-title-a"
+                          ><h3>Irish Books</h3></a
+                        >
+                        <ul id="Irish" class="book-menu-ul">
+                          <li class="book-menu-ul-li">
+                            <a href="#" class="book-menu-ul-a"></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="ul-menu-nav-item">
+                <a href="#" class="gift-cards ul-menu-nav-link"
+                  >Gift Cards & Subscriptions</a
+                >
+              </li>
+              <li class="ul-menu-nav-item">
+                <a href="#" class="toys ul-menu-nav-link">Toys & Games</a>
+              </li>
+              <li class="ul-menu-nav-item">
+                <a href="#" class="gifts ul-menu-nav-link">Gifts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- ==================== end navbar -->
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="big-slider">
+          <div class="slider">
+            <div class="slider-item">
+              <a href="#">
+                <img
+                  src="./images/slider 1/Late_Late_Show_Banner_1918_x_585.webp"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="button-next">next</div>
+            <div class="button-prev">prev</div>
+            <div class="span-box"></div>
+            <span class="img1"></span>
+            <span class="img2"></span>
+            <span class="img3"></span>
+          </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+      </div>
+    </main>
+    <footer></footer>
+    <script src="./js/script-header.js"></script>
+    <script src="./js/create-sidebar-elements.js"></script>
+  </body>
+</html>
