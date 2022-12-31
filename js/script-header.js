@@ -110,4 +110,3 @@ closeSideBarIcon.addEventListener("click", () => {
   sideBar.style.left = "-100%";
   document.body.style.overflow = "scroll"; // bargardandane scrollbar body
 });
-// test gitLenz
