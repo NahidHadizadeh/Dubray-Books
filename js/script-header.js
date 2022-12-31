@@ -36,7 +36,7 @@ cartBtnHeader.addEventListener("click", () => {
   document.body.style.overflow = "hidden"; // hazfe scroll body
   document.body.style.paddingRight = "17px";
   headerElem.style.paddingRight = "17px";
-  // ======
+  // ====== 
 });
 // =============================  close cart contact
 layoutCart.addEventListener("click", (event) => {
@@ -50,7 +50,7 @@ layoutCart.addEventListener("click", (event) => {
     document.body.style.paddingRight = "0";
     headerElem.style.paddingRight = "0";
     // ======
-
+    
     cartContainer.style.transform = "translateX(110%)"; // halate animationi
     layoutCart.style.animation = "fadeInAnimationForHidden ease .4s";
     setTimeout(() => {
